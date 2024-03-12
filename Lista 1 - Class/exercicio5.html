@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Filme{
+            titulo;
+            genero;
+            duracao;
+            constructor(titulo,genero,duracao){
+                this.titulo = titulo;
+                this.genero = genero;
+                this.duracao = duracao;
+            }
+            informacoesFilme(){
+                return("O título do filme é " + this.titulo + ", o gênero é: " + this.genero + " e possui " + this.duracao + " horas de duração")
+            }
+        }
+
+        let Filme1 = new Filme("O Mágico de Oz", "Fantasia", "1:52");
+
+        console.log(Filme1.informacoesFilme());
+    </script>
+</body>
+</html>
